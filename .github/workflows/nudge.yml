@@ -15,4 +15,5 @@ jobs:
       - name: Send notification
         uses: pavlovic-ivan/octo-nudge@add-cancelled-conclussion
         with:
+          conclusions: failure,cancelled
           webhooks: ${{ secrets.NUDGE_WEBHOOKS }}
